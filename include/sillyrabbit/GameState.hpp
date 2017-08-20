@@ -1,5 +1,5 @@
-#ifndef EYAX_GAMESTATE_HPP
-#define EYAX_GAMESTATE_HPP
+#ifndef SILLYRABBIT_GAMESTATE_HPP
+#define SILLYRABBIT_GAMESTATE_HPP
 
 /**SFML and OpenGL**/
 #include <SFML/Window.hpp>
@@ -9,7 +9,7 @@
 /**Standard library**/
 #include <iostream>
 
-namespace eyax {
+namespace sr {
 
 class Application;
 
@@ -34,7 +34,7 @@ class GameState
 
     protected:
 
-    Application * application;
+        Application * application;
 
     private:
 
@@ -45,6 +45,6 @@ class GameState
         bool m_isRunning;
 };
 
-} // namespace eyax
+}
 
-#endif // EYAX_GAMESTATE_HPP
+#endif

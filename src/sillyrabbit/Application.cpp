@@ -1,20 +1,23 @@
-#include "eyax/Application.hpp"
+#include "sillyrabbit/Application.hpp"
 
-namespace eyax {
+namespace sr {
 
 Application::Application(const wchar_t* title, unsigned int width, unsigned int height,
                          const sf::Uint32& style, const sf::ContextSettings& settings)
-                            : window(new sf::Window(sf::VideoMode(width, height), title, style, settings)), m_isRunning(true)
+                            : window(new sf::Window(sf::VideoMode(width, height), title, style, settings)), m_isRunning(true), m_isMouseLocked(false)
 { }
 
 Application::Application(const char* title, unsigned int width, unsigned int height,
                          const sf::Uint32& style, const sf::ContextSettings& settings)
-                            : window(new sf::Window(sf::VideoMode(width, height), title, style, settings)), m_isRunning(true)
+                            : window(new sf::Window(sf::VideoMode(width, height), title, style, settings)), m_isRunning(true), m_isMouseLocked(false)
 { }
 
 Application::~Application()
 {
     delete window;
+    #ifdef SILLYRABBIT_DEBUG
+        std::cout << "SILLYRABBIT DEBUG MODE : Application ended." << std::endl;
+    #endif // SILLYRABBIT_DEBUG
 }
 
 bool Application::init()
@@ -64,6 +67,21 @@ void Application::popState()
     m_states.pop();
 }
 
+void Application::lockMouse()
+{
+    m_isMouseLocked = true;
+    window->setMouseCursorGrabbed(true);
+}
 
+void Application::unlockMouse()
+{
+    m_isMouseLocked = false;
+    window->setMouseCursorGrabbed(false);
+}
 
-} // namespace eyax
+void Application::setMouseDelta(const sf::Vector2i& newDelta)
+{
+    m_mouseDelta = newDelta;
+}
+
+}
