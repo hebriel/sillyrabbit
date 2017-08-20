@@ -13,3 +13,9 @@ Really small OpenGL engine using SFML, please note the following :
 ## Code example
 
 In the previous versions you could find a code example here, in this document. Now an example project is available in the ***examples*** folder.
+
+## Linkage
+
+By compiling with the "SILLYRABBIT_DEBUG" define, you have access to the Debug Mode of the Engine. That adds functionnalities like **force unlock** (A+R for 5 seconds) and outputs more interesting stuff to the console.
+
+The convention ask you to compile the debug version of the engine to "libsillyrabbit-d" and the release version to "libsillyrabbit" (Same convention as SFML's). The prebuilt binaries (currently only for linux32) also uses that convention. Use libsillyrabbit-d.so in debug and libsillyrabbit.so for release.
