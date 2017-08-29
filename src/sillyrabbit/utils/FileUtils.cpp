@@ -14,7 +14,7 @@ std::string readFile(const char* filepath)
     char* data = new char[length + 1];
     memset(data, 0, length + 1);
     fseek(file, 0, SEEK_SET);
-    if(fread(data, 1, length, file)) Log::error("Error reading a file");
+    if(!fread(data, 1, length, file)) Log::error("Error reading a file");
     fclose(file);
 
     std::string result(data);
