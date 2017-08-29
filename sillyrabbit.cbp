@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="sillyrabbit" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/sillyrabbit" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-std=c++14" />
+					<Add option="-g" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add library="sfml-graphics" />
+					<Add library="sfml-window" />
+					<Add library="sfml-system" />
+					<Add library="GL" />
+					<Add library="GLU" />
+					<Add library="sillyrabbit-d" />
+					<Add directory="lib" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/sillyrabbit" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-std=c++14" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="sfml-graphics" />
+					<Add library="sfml-window" />
+					<Add library="sfml-system" />
+					<Add library="GL" />
+					<Add library="GLU" />
+					<Add library="sillyrabbit" />
+					<Add directory="lib" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="include/MyApp.hpp" />
+		<Unit filename="include/sillyrabbit/Application.hpp" />
+		<Unit filename="include/sillyrabbit/Config.hpp" />
+		<Unit filename="include/sillyrabbit/GameState.hpp" />
+		<Unit filename="include/sillyrabbit/graphics/Buffer.hpp" />
+		<Unit filename="include/sillyrabbit/graphics/Camera.hpp" />
+		<Unit filename="include/sillyrabbit/graphics/Camera/FreeViewCamera.hpp" />
+		<Unit filename="include/sillyrabbit/graphics/Camera/LookCamera.hpp" />
+		<Unit filename="include/sillyrabbit/graphics/GameObject.hpp" />
+		<Unit filename="include/sillyrabbit/graphics/IndexBuffer.hpp" />
+		<Unit filename="include/sillyrabbit/graphics/Shader.hpp" />
+		<Unit filename="include/sillyrabbit/graphics/VertexArray.hpp" />
+		<Unit filename="include/sillyrabbit/objects/GameObject.hpp" />
+		<Unit filename="include/sillyrabbit/utils/FileUtils.hpp" />
+		<Unit filename="include/sillyrabbit/utils/Log.hpp" />
+		<Unit filename="include/sillyrabbit/utils/Math.hpp" />
+		<Unit filename="include/states/myState.hpp" />
+		<Unit filename="main.cpp" />
+		<Unit filename="shaders/basic.frag" />
+		<Unit filename="shaders/basic.vert" />
+		<Unit filename="shaders/light.frag" />
+		<Unit filename="shaders/light.vert" />
+		<Unit filename="shaders/texture.frag" />
+		<Unit filename="shaders/texture.vert" />
+		<Unit filename="src/MyApp.cpp" />
+		<Unit filename="src/sillyrabbit/graphics/Camera.cpp" />
+		<Unit filename="src/sillyrabbit/graphics/Camera/FreeViewCamera.cpp" />
+		<Unit filename="src/sillyrabbit/graphics/Camera/LookCamera.cpp" />
+		<Unit filename="src/sillyrabbit/objects/GameObject.cpp" />
+		<Unit filename="src/states/myState.cpp" />
+		<Extensions>
+			<envvars />
+			<code_completion />
+			<lib_finder disable_auto="1" />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

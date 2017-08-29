@@ -14,6 +14,17 @@
 
 namespace sr { namespace utils {
 
+    template<typename T>
+    glm::vec2 toGLMVector(sf::Vector2<T> vec) /**Might get deprecated in the future when 100% of the SFML methods will be supported directly by the engine**/
+    {
+        return glm::vec2(vec.x, vec.y);
+    }
+
+    template<typename T>
+    glm::vec3 toGLMVector(sf::Vector3<T> vec) /**Might get deprecated in the future when 100% of the SFML methods will be supported directly by the engine**/
+    {
+        return glm::vec3(vec.x, vec.y, vec.z);
+    }
 
 } }
 

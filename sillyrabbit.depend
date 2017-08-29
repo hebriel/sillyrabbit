@@ -1,0 +1,111 @@
+# depslib dependency file v1.0
+1503538826 source:/home/haestiaa/Bureau/dev/sillyrabbit/main.cpp
+	<MyApp.hpp>
+
+1503260842 /home/haestiaa/Bureau/dev/sillyrabbit/include/MyApp.hpp
+	<sillyrabbit/Application.hpp>
+	<states/myState.hpp>
+
+1503326649 /home/haestiaa/Bureau/dev/sillyrabbit/include/sillyrabbit/Application.hpp
+	<SFML/Window.hpp>
+	<SFML/OpenGL.hpp>
+	<GL/glu.h>
+	<iostream>
+	<stack>
+	"GameState.hpp"
+	"utils/Math.hpp"
+
+1503258559 /home/haestiaa/Bureau/dev/sillyrabbit/include/sillyrabbit/GameState.hpp
+	<SFML/Window.hpp>
+	<SFML/OpenGL.hpp>
+	<GL/glu.h>
+	<iostream>
+
+1503260796 source:/home/haestiaa/Bureau/dev/sillyrabbit/src/MyApp.cpp
+	"MyApp.hpp"
+
+1503540716 source:/home/haestiaa/Bureau/dev/sillyrabbit/src/states/myState.cpp
+	"states/myState.hpp"
+	<sillyrabbit/Application.hpp>
+
+1503540448 /home/haestiaa/Bureau/dev/sillyrabbit/include/states/myState.hpp
+	<SFML/Graphics/Texture.hpp>
+	<sillyrabbit/GameState.hpp>
+	<sillyrabbit/graphics/Buffer.hpp>
+	<sillyrabbit/graphics/IndexBuffer.hpp>
+	<sillyrabbit/graphics/VertexArray.hpp>
+	<sillyrabbit/graphics/Shader.hpp>
+	<sillyrabbit/graphics/Camera/FreeViewCamera.hpp>
+
+1503258501 /home/haestiaa/Bureau/dev/sillyrabbit/include/sillyrabbit/graphics/Buffer.hpp
+	<SFML/OpenGL.hpp>
+	<GL/glext.h>
+
+1503258498 /home/haestiaa/Bureau/dev/sillyrabbit/include/sillyrabbit/graphics/IndexBuffer.hpp
+	<SFML/OpenGL.hpp>
+	<GL/glext.h>
+
+1503258509 /home/haestiaa/Bureau/dev/sillyrabbit/include/sillyrabbit/graphics/VertexArray.hpp
+	<SFML/OpenGL.hpp>
+	<GL/glext.h>
+	<vector>
+	"Buffer.hpp"
+
+1503258493 /home/haestiaa/Bureau/dev/sillyrabbit/include/sillyrabbit/graphics/Shader.hpp
+	"../utils/Math.hpp"
+	"../utils/FileUtils.hpp"
+	"../utils/Log.hpp"
+	<vector>
+	<iostream>
+	<SFML/OpenGL.hpp>
+	<GL/glext.h>
+
+1503327070 /home/haestiaa/Bureau/dev/sillyrabbit/include/sillyrabbit/utils/Math.hpp
+	<SFML/Window.hpp>
+	<SFML/System.hpp>
+	<glm/glm.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<glm/gtc/type_ptr.hpp>
+	<cmath>
+
+1503258417 /home/haestiaa/Bureau/dev/sillyrabbit/include/sillyrabbit/utils/FileUtils.hpp
+	<string>
+	<cstring>
+
+1503258437 /home/haestiaa/Bureau/dev/sillyrabbit/include/sillyrabbit/utils/Log.hpp
+	<iostream>
+
+1503318879 source:/home/haestiaa/Bureau/dev/sillyrabbit/src/sr/objects/GameObject.cpp
+	"sillyrabbit/objects/GameObject.hpp"
+
+1503325015 /home/haestiaa/Bureau/dev/sillyrabbit/include/sillyrabbit/objects/GameObject.hpp
+	"../utils/Math.hpp"
+
+1503358903 /home/haestiaa/Bureau/dev/sillyrabbit/include/sillyrabbit/graphics/Camera.hpp
+	"../objects/GameObject.hpp"
+
+1503355378 source:/home/haestiaa/Bureau/dev/sillyrabbit/src/sillyrabbit/graphics/Camera.cpp
+	"sillyrabbit/graphics/Camera.hpp"
+
+1503359093 source:/home/haestiaa/Bureau/dev/sillyrabbit/src/sillyrabbit/graphics/Camera/LookCamera.cpp
+	"sillyrabbit/graphics/Camera/LookCamera.hpp"
+	<iostream>
+
+1503358342 /home/haestiaa/Bureau/dev/sillyrabbit/include/sillyrabbit/graphics/Camera/LookCamera.hpp
+	"../Camera.hpp"
+
+1503318443 source:/home/haestiaa/Bureau/dev/sillyrabbit/src/sr/graphics/GameObject.cpp
+	"sillyrabbit/graphics/GameObject.hpp"
+
+1503318453 /home/haestiaa/Bureau/dev/sillyrabbit/include/sillyrabbit/graphics/GameObject.hpp
+
+1503325869 source:/home/haestiaa/Bureau/dev/sillyrabbit/src/sillyrabbit/objects/GameObject.cpp
+	"sillyrabbit/objects/GameObject.hpp"
+
+1503358038 /home/haestiaa/Bureau/dev/sillyrabbit/include/sillyrabbit/graphics/Camera/FreeViewCamera.hpp
+	"LookCamera.hpp"
+	<SFML/Window.hpp>
+
+1503358287 source:/home/haestiaa/Bureau/dev/sillyrabbit/src/sillyrabbit/graphics/Camera/FreeViewCamera.cpp
+	"sillyrabbit/graphics/Camera/FreeViewCamera.hpp"
+

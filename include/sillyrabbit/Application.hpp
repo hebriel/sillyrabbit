@@ -12,6 +12,7 @@
 
 /**Engine**/
 #include "GameState.hpp"
+#include "utils/Math.hpp"
 
 namespace sr {
 
@@ -44,7 +45,7 @@ class Application
 
         void unlockMouse(); /**Unlock mouse movement (see documentation for lockMouse() for more explanation)**/
 
-        sf::Vector2i getMouseDelta() /**Returns relative mouse movement (not 100% reliable if not used each frame)**/
+        glm::vec2 getMouseDelta() /**Returns relative mouse movement (not 100% reliable if not used each frame)**/
         {return m_mouseDelta;}
 
         bool isMouseLocked()
@@ -54,13 +55,13 @@ class Application
 
     private:
 
-        void setMouseDelta(const sf::Vector2i& newDelta);
+        void setMouseDelta(const glm::vec2& newDelta);
 
         bool m_isRunning;
         std::stack<GameState*> m_states;
 
         bool m_isMouseLocked;
-        sf::Vector2i m_mouseDelta;
+        glm::vec2 m_mouseDelta;
 };
 
 }
